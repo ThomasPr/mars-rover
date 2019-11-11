@@ -32,7 +32,7 @@ export class Rover {
       .split('')
       .filter(() => !this.hasObstacle)
       .map(command => capabilities.find(capability => capability.command === command))
-      .forEach(capability => capability ?.action());
+      .forEach(capability => capability?.action());
   }
 
   private turn(numericTurnDirection: -1 | 1) {
