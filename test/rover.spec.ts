@@ -58,14 +58,14 @@ describe("Rover", () => {
   })
 
   it("should turn left twice", () => {
-		rover.processCommands("ffllb");
+    rover.processCommands("ffllb");
     expect(rover.y).toBe(4);
     expect(rover.x).toBe(1);
     expect(rover.getDirection()).toBe("SOUTH");
   })
 
   it("should turn around", () => {
-		rover.processCommands("ffllff");
+    rover.processCommands("ffllff");
     expect(rover.y).toBe(1);
     expect(rover.x).toBe(1);
     expect(rover.getDirection()).toBe("SOUTH");
